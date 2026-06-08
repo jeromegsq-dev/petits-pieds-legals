@@ -50,9 +50,30 @@ header.site .wrap {
 
 header.site .brand {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   text-decoration: none;
   color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1;
+}
+
+header.site .brand img {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  header.site .brand span {
+    font-size: 14px;
+  }
+  header.site .brand img {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 header.site nav {
